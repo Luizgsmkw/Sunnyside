@@ -256,6 +256,14 @@ main {
     color: hsl(210, 4%, 67%);
 }
 
+.container-3 {
+    display: flex;
+}
+
+.container-3 img {
+    width: 25%;
+}
+
 @media (max-width: 1100px) {
     
     .info1 h2 {
@@ -313,6 +321,14 @@ main {
     }
     .clientTestimonials1, .clientTestimonials2, .clientTestimonials3 {
         padding-right: 0px;
+    }
+
+    .container-3 {
+        flex-wrap: wrap;
+    }
+    
+    .container-3 img {
+        width: 50%;
     }
    
 }
@@ -445,6 +461,7 @@ main {
     .info1, .info2 {
         height: 400px;
     }
+
 }
 
 @media (max-width: 480px) {
