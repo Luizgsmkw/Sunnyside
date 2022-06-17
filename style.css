@@ -130,17 +130,18 @@ main {
 .vejaMais1, .vejaMais2 {
     font-weight: bolder;
     padding-left: 2px;
-    width: 110px;
+    width: 120px;
     height: 20px;
     color: black;
+    font-family: 'Fraunces', serif;
 }
 
 .vejaMais1:hover {
-    border-bottom: 3px solid #ffd501f0;
+    border-bottom: 3px solid hsl(51, 100%, 49%);
 }
 
 .vejaMais2:hover {
-    border-bottom: 3px solid #FF7163;
+    border-bottom: 3px solid hsl(7, 99%, 70%);
 }
 
 .img-1, .img-2 {
@@ -178,12 +179,81 @@ main {
     text-align: center;
     margin-bottom: 30px;
 }
+
 .info3 div, .info4 div {
     margin-bottom: 20px;
 }
-.info3 div p, .info4 div p {
+
+.info3 div p {
     text-align: center;
     margin-bottom: 7px;
+    color: hsl(167, 40%, 24%);
+}
+
+.info4 div p {
+    text-align: center;
+    margin-bottom: 7px;
+    color: hsl(198, 62%, 26%);
+}
+
+.container-2 {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: center;
+}
+
+.container-2 h3 {
+    color: hsl(210, 4%, 67%);
+    text-align: center;
+    font-family: 'Fraunces', serif;
+    letter-spacing: 7px;
+    margin-bottom: 50px;
+}
+
+.clientTestimonials {
+    display: flex;
+    justify-content: center;
+}
+
+.clientTestimonials1, .clientTestimonials2, .clientTestimonials3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-right: 50px;
+    height: 400px;
+}
+
+.comentario {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-around;
+    color: hsl(213, 9%, 39%);
+    font-weight: 500;
+    height: 80px;
+}
+
+.clientTestimonials1 img, .clientTestimonials2 img, .clientTestimonials3 img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.clientTestimonials1-info, .clientTestimonials2-info, .clientTestimonials3-info {
+    text-align: center;
+}
+
+.clientTestimonials1-info p, .clientTestimonials2-info p, .clientTestimonials3-info p {
+    font-family: 'Fraunces', serif;
+    font-size: 18px;
+    color: hsl(212, 27%, 19%);
+}
+
+.clientTestimonials1-info span, .clientTestimonials2-info span, .clientTestimonials3-info span {
+    font-size: 12px;
+    color: hsl(210, 4%, 67%);
 }
 
 @media (max-width: 1100px) {
@@ -192,6 +262,7 @@ main {
         width: 250px;
         font-size: 25px;
     }
+
     .info2 h2 {
         width: 300px;
         font-size: 25px;
@@ -202,6 +273,7 @@ main {
         background-size: cover;
         background-position: center;
     }
+
      .info4 {
         background-image: url(img/desktop/image-photography.jpg);
         background-size: cover;
@@ -232,6 +304,17 @@ main {
         justify-content: flex-end;
         align-items: center;
     }
+    .container-2 {
+        height: 1400px;
+    }
+    .clientTestimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .clientTestimonials1, .clientTestimonials2, .clientTestimonials3 {
+        padding-right: 0px;
+    }
+   
 }
 
 @media (max-width: 700px) {
@@ -359,6 +442,9 @@ main {
     .header-sec2 h2{
         font-size: 38px;
     }
+    .info1, .info2 {
+        height: 400px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -371,4 +457,5 @@ main {
     .header-sec2 h2{
         font-size: 25px;
     }
+    
 }
